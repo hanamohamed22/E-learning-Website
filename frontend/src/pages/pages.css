@@ -1,0 +1,8 @@
+label{
+    font-weight: bold;
+    display: inline;
+}
+
+.iconButton:hover {
+   cursor:pointer!important;
+  }

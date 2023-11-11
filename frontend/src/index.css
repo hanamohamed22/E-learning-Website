@@ -1,0 +1,523 @@
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@400;500;800&family=Sacramento&display=swap');
+
+
+body {
+  background-color:#f9f9f9;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+  
+}
+label{
+  font-weight: bold;
+  display: inline;
+}
+h5{
+  display:inline-block
+
+}
+p{
+  margin-bottom: 2px;
+  font-family:  sans-serif;
+}
+
+.bgCard{
+
+  margin: 1rem auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(143, 143, 143, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:80%;
+  padding:2rem;
+  justify-content: center;
+  text-align: center;
+
+
+}
+  .signup input, .login input {
+  display: block;
+  border: none;
+  font-size: 18px;
+  max-width: 100%;
+  padding: 10px 14px;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+      rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  border-radius: 4px;
+  background: white;
+  color: #000000;
+  letter-spacing: 0.025em;
+  width: 100%;
+}
+/* base styles */
+
+.navbar {
+  padding: 0 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.19);
+  text-align: left;;
+  
+
+}
+h1:not(.course-info h1, .welcome h1) {
+  color: #8C0909;
+}
+h3{
+  color:#000000
+}
+h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+
+}
+h2, h4{
+  font-family:  sans-serif;
+  font-weight: 500;;
+
+}
+
+.navbar a {
+  text-decoration: none;
+}
+a{
+  color:#000000;
+}
+.navbar .navbar-brand{
+  padding: 0%;
+  text-decoration: none;
+  width: 15%;
+}
+
+.countrySelect{
+  width:8rem;
+}
+
+/* /////////////search bar ////////////////// */
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  width: 40%;
+  margin-right: 20px;
+  color: white;
+}
+
+.clear-icon {
+  border:0;
+  background:transparent;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width:20px;
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+.search  {
+  border: 1px solid grey;
+  border-radius:5px;
+  height: 45px;
+  width: 100%;
+  padding: 2px 23px 2px 40px;
+  outline: 0;
+  background-color: #ffffff;
+}
+.search:hover, .search:focus {
+  border: 1.5px solid #825956;
+  background-color: white;
+}
+
+.searchButton {
+  text-align: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width:20px;
+}
+
+/* ///////////////Courses display/////////////////// */
+.cardsContainer:not(.cardsCarousel){
+  width:80%;
+  margin: 0 auto;
+}
+.cardsCarousel:not(.welcome-page .cardsCarousel ){
+  background-color: white;
+  padding: 50px 0;
+}
+.content {
+  justify-content: center;
+  margin: 30px auto;
+  padding: 10px;
+}
+.courseCard{
+  width:95%;
+  color:#333;
+  box-shadow: 0.3em 0.3em 1em rgba(153, 151, 151, 0.3);
+}
+.courseCardImg{
+  -webkit-filter: grayscale(100%) blur(10%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%) ;
+
+}
+.card-title{
+  font-size:x-large;
+  color:#B90B0B
+}
+
+.card-img {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 100px;
+  object-fit: cover;
+}
+.instructorCourseCard{
+  background-color: white;
+  /* border-top: solid 1px rgb(186, 183, 183); */
+  border-radius: 2px;
+  color:rgb(55, 55, 55);
+  }
+
+.instructorCourseImg{
+    width: 140px;
+    height: 100%;
+    box-shadow: 0 0 5px rgb(143, 142, 142);
+    object-fit: cover;
+
+}
+.instructorCourseCard:hover{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(143, 143, 143, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.courseCard:hover{
+  border: 1.5px solid #515151;
+  background-color: white;
+  box-shadow: 10px 10px 20px 1px rgb(111, 109, 109) ;
+}
+.card-body p {
+  color:rgb(121, 121, 121);
+  font-size: small;
+}
+
+
+.cardsCarousel h1{
+  font-weight: 600;
+  margin-left: 200px;
+}
+
+
+/* ///////////////filters//////////// */
+.filters{
+  width:8rem;}
+  
+.btn-primary{
+      text-align: center;
+      color: rgb(255, 255, 255);
+      background-color: #B90B0B;
+      border: 0.1mm solid  rgb(178, 177, 177);
+    --bs-btn-bg: #CFD2CF;
+    --bs-btn-border-color: #CFD2CF;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-border-color: #CFD2CF;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #CFD2CF;
+    --bs-btn-active-border-color: #CFD2CF;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #CFD2CF;
+    --bs-btn-disabled-border-color: #CFD2CF;
+    
+}
+.modal-header{
+  background-color:  #e0d8d8;
+}
+.btn:active:focus{
+  border: 0;
+  box-shadow: none;
+}
+.page-link.active, .page-link:focus{
+  box-shadow: none;
+  border:0
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border:0;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #a8a8a846;
+}
+
+.dropdown-menu{
+  --bs-dropdown-link-active-bg: #8C0909;
+}
+.dynamic-star-container {
+  height: 17px;
+  margin: 0;
+}
+/* ////////////////Registered course page/////////// */
+.courseContainer{
+  width:60%;
+  margin: 10px auto;
+}
+
+.dynamic-star-container{
+  height: 30px;
+  margin:0;
+}
+.accordion{
+  --bs-accordion-btn-focus-box-shadow: 0 ;
+    --bs-accordion-active-color: #c20000;
+    --bs-accordion-active-bg: #e9ecef;   
+}
+.progress-bar{
+  background-color: #ec9c4d;
+
+}
+.dropdown-toggle{
+  background-color: white;
+  color:rgb(95, 95, 95)
+}
+
+/* /////////////////// course page//////////////////////////////// */
+.subsCard{
+  width:50%;
+  --bs-card-bg:"none";
+  border-radius:0;
+}
+
+/* //////////////////Instructor info///////////////////////////////// */
+
+.instructor-img{
+    border-radius: 50%;
+    width: 15%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: 1%;
+}
+
+.instructor-pinfo{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.instructor-bio{
+  margin:20px 
+}
+.instructor-info{
+  padding: 3rem;
+  background-image: url("images/greyBg.jpg");
+}
+
+/* //////////////////Instructor profile///////////////////////////////// */
+
+.edit-profile-btn{
+  position: absolute;
+  right: 100px;
+  top:120px;
+}
+
+/* ////////////////////////course info//////////////////// */
+
+.course-info{
+  margin: 1rem 2rem;
+  padding: 4rem;
+  padding-left: 8rem;
+  background-color: #8C0909;
+  background-image: url("images/bg2.jpg");
+ color: white;
+}
+.dynamic-star-container:not(:last-child) {
+  margin-right: 0px;
+}
+.course-info-modules{
+  clear: both;
+}
+.course-info-modules .accordion,.requests-accords .accordion{
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-width: 0px;
+  --bs-accordion-btn-focus-border-color: transparent;
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-btn-focus-box-shadow:0;
+}
+ .nav-tabs .nav-link{
+  color:#000000;
+}
+.nav-link{
+  color:#000000;
+}
+
+
+.course-info-modules .accordion-item{
+  border-top: solid 1px rgb(210, 208, 208);
+  border-radius: 0px;
+}
+.course-info-modules .accordion-body,.requests-accords .accordion-body{
+  padding-top: 0;
+}
+.reportProblem{
+  position: absolute;
+  right:60px;
+  top:110px;
+  
+}
+.requests-accords .accordion-item{
+  border-bottom: solid 1px rgb(210, 208, 208);
+  border-radius: 0px;
+}
+.course-info-modules .accordion-button:hover,.requests-accords .accordion-button:hover{
+  background:none;
+  color: inherit;
+}
+.highButton{
+  margin: 2rem 0;
+  height:4rem
+}
+ 
+/* ///////bootstrap//////// */
+
+.nav-tabs {
+  --bs-nav-tabs-link-active-bg: transparent;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 rgba(255, 255, 255, 0.785);
+  border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+}
+
+/* ///progress model///// */
+
+.progressModel .progress  {
+  background:transparent;
+  border: solid 1px rgb(116, 60, 60);
+  border-radius: 2px;
+  height: 15px;
+  width:20%;
+
+}
+.progressModel .progress-bar{
+  border-radius: 0%;
+  background-color: #491111;
+}
+
+/* ////admin/// */
+.traineeCard{
+
+}
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background:  rgb(237, 237, 237);
+  border-radius: 4px;
+}
+
+.pagination {
+  --bs-pagination-color: #d5d8db;
+    --bs-pagination-active-bg: #8C0909;
+    --bs-pagination-active-border-color: #8C0909;
+    
+}
+input.ccForm {
+  display: block;
+  border: none;
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+  max-width: 100%;
+  padding: 10px 14px;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+      rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  border-radius: 4px;
+  background: white;
+  color: #000000;
+  letter-spacing: 0.025em;
+  width: 100%;
+}
+
+
+:root{
+  --bs-link-color: #8C0909;
+  --bs-link-hover-color: #8C0909;
+  --ck-color-base-active: #8C0909;
+  --ck-color-base-active-focus: #8C0909;
+  --ck-color-button-on-color: #8C0909;
+  --ck-color-button-on-background: #FB9935;
+    --ck-color-button-on-hover-background: #FB9935;
+    --ck-color-button-on-active-background: #FB9935;
+    --ck-color-focus-outer-shadow: #FB9935;
+
+}
+
+.confirm-bg {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #202020;
+  opacity: 0.55;
+  overflow: hidden; /* disable scrolling*/
+  z-index: 2; /* higher than all other items, but lower than 
+    the confirm box*/
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   color:inherit;
+ }
+
+ /* ////////welcome//////// */
+ .welcome{
+  /* background-image: url("images/welcome.jpg");; */
+  background-color: #d6d6d6;
+  /* padding:8.4rem; */
+  padding: 7rem 8.4rem;
+  border-bottom-right-radius:220px ;
+  box-shadow: inset 5px 5px 80px #606060;
+ }
+
+.welcome h1{
+  font-size: 4.9rem;
+  color:transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  line-height:90%;
+}
+
+
+.welcome h3{
+  color: #8C0909;
+  font-size: 3.4rem;
+  font-weight: bold;
+  line-height:90%;  
+
+
+}
+
+.welcome h2{
+  color: black;
+
+  line-height:90%;  
+  font-size: 3.4rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+.welcome h4{
+  color: black;
+  /* padding-left: 5%;; */
+  font-size: 6.3rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height:90%;  
+
+
+
+}
+
+.tableRow:hover{
+  box-shadow: inset 5px 5px 80px #929191;
+
+}
